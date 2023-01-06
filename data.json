@@ -4,8 +4,6 @@
         "title": "Social Media Dashboard",
         "followers":"Total followers: ",
         "mode": "Dark Mode",
-        "view": "Overview - ",
-        "viewDay": "Today",
         "item": [
             {
                 "type": "followers-stadistics",
@@ -50,7 +48,14 @@
                 "rowIcon": "images/icon-down.svg",
                 "followersMetric": "144",
                 "day": "Today"
-            },
+            }
+        ]
+    },
+    {
+        "hero": "general-hero",
+        "view": "Overview - ",
+        "viewDay": "Today",
+        "item": [
             {
                 "type": "general-stadistics",
                 "metric": "Page Views",
@@ -117,5 +122,4 @@
             }
         ]
     }
-    
 ]
