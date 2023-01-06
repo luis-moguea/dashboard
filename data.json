@@ -1,0 +1,121 @@
+[
+    {
+        "hero": "followers-hero",
+        "title": "Social Media Dashboard",
+        "followers":"Total followers: ",
+        "mode": "Dark Mode",
+        "view": "Overview - ",
+        "viewDay": "Today",
+        "item": [
+            {
+                "type": "followers-stadistics",
+                "color": "",
+                "networkIcon": "images/icon-facebook.svg",
+                "id":"@nathanf",
+                "followersCount": "1987",
+                "followersWord": "followers",
+                "rowIcon": "images/icon-up.svg",
+                "followersMetric": "12",
+                "day": "Today"
+            },
+            {
+                "type": "followers-stadistics",
+                "color": "",
+                "networkIcon": "images/icon-twitter.svg",
+                "id":"@nathanf",
+                "followersCount": "1044",
+                "followersWord": "followers",
+                "rowIcon": "images/icon-up.svg",
+                "followersMetric": "99",
+                "day": "Today"
+            },
+            {
+                "type": "followers-stadistics",
+                "color": "",
+                "networkIcon": "images/icon-instagram.svg",
+                "id":"@realnathanf",
+                "followersCount": "11k",
+                "followersWord": "followers",
+                "rowIcon": "images/icon-up.svg",
+                "followersMetric": "1099",
+                "day": "Today"
+            },
+            {
+                "type": "followers-stadistics",
+                "color": "",
+                "networkIcon": "images/icon-youtube.svg",
+                "id":"Nathan F.",
+                "followersCount": "8239",
+                "followersWord": "followers",
+                "rowIcon": "images/icon-down.svg",
+                "followersMetric": "144",
+                "day": "Today"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Page Views",
+                "networkIcon": "images/icon-facebook.svg",
+                "metricCount": "87",
+                "rowIcon": "images/icon-up.svg",
+                "stadisticMetric": "3%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Likes",
+                "networkIcon": "images/icon-facebook.svg",
+                "metricCount": "52",
+                "rowIcon": "images/icon-down.svg",
+                "stadisticMetric": "2%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Likes",
+                "networkIcon": "images/icon-instagram.svg",
+                "metricCount": "5462",
+                "rowIcon": "images/icon-up.svg",
+                "stadisticMetric": "2257%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Profile Views",
+                "networkIcon": "images/icon-instagram.svg",
+                "metricCount": "52k",
+                "rowIcon": "images/icon-up.svg",
+                "stadisticMetric": "1375%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Retweets",
+                "networkIcon": "images/icon-twitter.svg",
+                "metricCount": "117",
+                "rowIcon": "images/icon-up.svg",
+                "stadisticMetric": "303%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Likes",
+                "networkIcon": "images/icon-twitter.svg",
+                "metricCount": "507",
+                "rowIcon": "images/icon-up.svg",
+                "stadisticMetric": "553%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Likes",
+                "networkIcon": "images/icon-youtube.svg",
+                "metricCount": "107",
+                "rowIcon": "images/icon-down.svg",
+                "stadisticMetric": "19%"
+            },
+            {
+                "type": "general-stadistics",
+                "metric": "Total Views",
+                "networkIcon": "images/icon-youtube.svg",
+                "metricCount": "1407",
+                "rowIcon": "images/icon-down.svg",
+                "stadisticMetric": "12%"
+            }
+        ]
+    }
+    
+]
