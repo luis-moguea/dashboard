@@ -2,7 +2,7 @@
     {
         "hero": "followers-hero",
         "title": "Social Media Dashboard",
-        "followers":"Total followers: ",
+        "followers":"Total followers: 23004",
         "mode": "Dark Mode",
         "item": [
             {
@@ -13,7 +13,7 @@
                 "followersCount": "1987",
                 "followersWord": "followers",
                 "rowIcon": "images/icon-up.svg",
-                "followersMetric": "12",
+                "followersMetric": "12 ",
                 "day": "Today"
             },
             {
@@ -24,7 +24,7 @@
                 "followersCount": "1044",
                 "followersWord": "followers",
                 "rowIcon": "images/icon-up.svg",
-                "followersMetric": "99",
+                "followersMetric": "99 ",
                 "day": "Today"
             },
             {
@@ -35,7 +35,7 @@
                 "followersCount": "11k",
                 "followersWord": "followers",
                 "rowIcon": "images/icon-up.svg",
-                "followersMetric": "1099",
+                "followersMetric": "1099 ",
                 "day": "Today"
             },
             {
@@ -46,7 +46,7 @@
                 "followersCount": "8239",
                 "followersWord": "subscribers",
                 "rowIcon": "images/icon-down.svg",
-                "followersMetric": "144",
+                "followersMetric": "144 ",
                 "day": "Today"
             }
         ]

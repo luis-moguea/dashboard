@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    align-content: center;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
@@ -7,8 +7,26 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
-
-.testing {
-    display: flex;
+.main{
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
+.header-js {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.second-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

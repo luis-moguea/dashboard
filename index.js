@@ -1,6 +1,10 @@
 import data from './data.json' assert { type: 'json' };
 
-const container = document.querySelector("#container")
+const firstItem = document.querySelector("#first-item")
+const secondItem = document.querySelector("#second-item")
+const header = document.querySelector("#header")
+const view = document.querySelector("#overview")
+
 
 data.map(el => {
     let element;
@@ -8,7 +12,7 @@ data.map(el => {
 if(el.hero === "followers-hero") {
     element = /*HTML*/`
         <div class="main-js" id="item">
-            <div class="header">
+            <div class="header-js">
                 <div class="title">
                     <h2>${el.title}</h2>
                     <p class="total-follows">${el.followers}</p>
@@ -19,30 +23,32 @@ if(el.hero === "followers-hero") {
             </div>
         </div>
     `
-    container.innerHTML += element
+    header.innerHTML += element
 
     el.item.map(info => {
             element = /*HTML*/`
             <div class="testing">
-                    <div class="">
+            <div >
+                <div class="">
+                    <div class="follows-info">
                         <div class="">
-                            <div class="">
-                                <img src="${info.networkIcon}" alt="">
-                                <p>${info.id}</p>
-                            </div>
-                            <div class="">
-                                <h3>${info.followersCount}</h3>
-                                <p>${info.followersWord}</p>
-                            </div>
-                            <div class="">
-                                <img src="${info.rowIcon}" alt="">
-                                <p>${info.followersMetric + info.day}</p>
-                            </div> 
+                            <img src="${info.networkIcon}" alt="">
+                            <p>${info.id}</p>
                         </div>
+                        <div class="">
+                            <h3>${info.followersCount}</h3>
+                            <p>${info.followersWord}</p>
+                        </div>
+                        <div class="">
+                            <img src="${info.rowIcon}" alt="">
+                            <p>${info.followersMetric + info.day}</p>
+                        </div> 
                     </div>
+                </div>
+            </div>
             </div>
             `
-            container.innerHTML += element
+            firstItem.innerHTML += element
 
     })} else if (el.hero === "general-hero"){
 
@@ -53,7 +59,7 @@ if(el.hero === "followers-hero") {
             </p>
         </div>
     `
-    container.innerHTML += element
+    view.innerHTML += element
 
     el.item.map(info => {
             element = /*HTML*/`
@@ -73,7 +79,7 @@ if(el.hero === "followers-hero") {
                 </div>
             </div>
             `
-            container.innerHTML += element
+             secondItem.innerHTML += element
         })}
     
 
