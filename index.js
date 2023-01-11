@@ -27,26 +27,26 @@ if(el.hero === "followers-hero") {
 
     el.item.map(info => {
             element = /*HTML*/`
-            <div class="testing">
+        <div class="testing">
             <div >
                 <div class="">
                     <div class="follows-info">
-                        <div class="">
-                            <img src="${info.networkIcon}" alt="">
-                            <p>${info.id}</p>
+                        <div class="follows-info__header">
+                            <img class="follows-info__header--img" src="${info.networkIcon}" alt="">
+                            <p class="follows-info__header--text">${info.id}</p>
                         </div>
-                        <div class="">
-                            <h3>${info.followersCount}</h3>
-                            <p>${info.followersWord}</p>
+                        <div class="follows-info__content">
+                            <h3 class="follows-info__content--count">${info.followersCount}</h3>
+                            <p class="follows-info__content--text">${info.followersWord}</p>
                         </div>
-                        <div class="">
-                            <img src="${info.rowIcon}" alt="">
-                            <p>${info.followersMetric + info.day}</p>
+                        <div class="follows-info__footer">
+                            <img class="follows-info__footer--img" src="${info.rowIcon}" alt="">
+                            <p class="follows-info__footer--text">${info.followersMetric + info.day}</p>
                         </div> 
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
             `
             firstItem.innerHTML += element
 

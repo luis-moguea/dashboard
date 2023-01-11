@@ -17,6 +17,62 @@ body {
     justify-content: space-between;
 }
 
+.follows-info {
+    justify-content: center;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    line-height: 3px;
+    border: solid;
+}
+
+.follows-info__header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.follows-info__header--img{
+    height: 20px;
+    width: 20px;
+}
+
+.follows-info__header--text{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.follows-info__content{
+    justify-content: center;
+}
+
+.follows-info__content--count{
+    font-size: 38px;
+}
+
+.follows-info__content--text{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.follows-info__footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.follows-info__footer--img{
+    height: 5px;
+    width: 10px;
+}
+
+.follows-info__footer--text{
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
 
 .first-item {
     display: flex;
