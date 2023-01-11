@@ -8,8 +8,8 @@ body {
 }
 
 .main{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .header-js {
@@ -19,11 +19,14 @@ body {
 
 .follows-info {
     justify-content: center;
-    width: 200px;
+    width: 180px;
     align-items: center;
     text-align: center;
     line-height: 3px;
     border: solid;
+    float: left;
+    margin-bottom: 15px;
+    padding: 0.5em;
 }
 
 .follows-info__header{
@@ -41,6 +44,7 @@ body {
 .follows-info__header--text{
     margin-left: 5px;
     font-size: 11px;
+    font-weight: bold;
 }
 
 .follows-info__content{
@@ -84,5 +88,42 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.main-general {
+    border: solid;
+    width: 180px;
+    margin-bottom: 15px;
+    height: 100px;
+    float: left;
+    padding: 0.5em;
+}
+
+.main-general__metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-general__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.main-general__content--cont {
+    display: flex;
+}
+
+.main-general__content--img {
+    height: 5px;
+    width: 10px;
+    margin-top: 23px;
+    margin-right: 2px;
 }
 
