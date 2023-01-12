@@ -46,19 +46,19 @@ body {
 
 .follows-info {
     justify-content: center;
-    width: 195px;
+    width: 200px;
     align-items: center;
     text-align: center;
     line-height: 3px;
     float: left;
     margin-bottom: 15px;
-    padding: 0.5em;
+    padding: 0.65em;
     padding-bottom: 0;
     background-color: hsl(228, 28%, 20%);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 98%;
-    margin-top: 5px;
+    margin-top: 3px;
     cursor: pointer;
 }
 
@@ -137,17 +137,15 @@ body {
 
 
 .main-general {
-    width: 195px;
+    width: 200px;
     margin-bottom: 15px;
     height: 80px;
     float: left;
-    padding: 0.5em;
+    padding: 0.8em;
     background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
-    padding-top: 0.2em;
     font-size: 11px;
     font-weight: bold;
-    padding-bottom: 0;
     cursor: pointer;
 }
 
