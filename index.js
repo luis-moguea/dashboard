@@ -28,12 +28,12 @@ if(el.hero === "followers-hero") {
     el.item.map(info => {
             element = /*HTML*/`
         <div class="main__js">
-            <div class="main__js__network__color">
-                <div class="main__js__network__color" id="color" >
+            <div class="main__js__network__color ${info.color}">
+                <div class="main__js__network__color ${info.color}"  >
                     <div class="follows-info">
                         <div class="follows-info__header">
                             <img class="follows-info__header--img" src="${info.networkIcon}" alt="network-icon">
-                            <p style="${info.color}" class="follows-info__header--text ${info.color}">${info.id}</p>
+                            <p style="${info.color}" class="follows-info__header--text">${info.id}</p>
                         </div>
                         <div class="follows-info__content">
                             <h3 class="follows-info__content--count">${info.followersCount}</h3>
