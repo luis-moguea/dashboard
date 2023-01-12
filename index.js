@@ -29,11 +29,11 @@ if(el.hero === "followers-hero") {
             element = /*HTML*/`
         <div class="main__js">
             <div class="main__js__network__color">
-                <div class="main__js__network__color ${info.color}" id="color" >
+                <div class="main__js__network__color" style="background: ${info.backColor};" >
                     <div class="follows-info">
                         <div class="follows-info__header">
                             <img class="follows-info__header--img" src="${info.networkIcon}" alt="network-icon">
-                            <p style="${info.color}" class="follows-info__header--text">${info.id}</p>
+                            <p class="follows-info__header--text">${info.id}</p>
                         </div>
                         <div class="follows-info__content">
                             <h3 class="follows-info__content--count">${info.followersCount}</h3>
@@ -41,7 +41,7 @@ if(el.hero === "followers-hero") {
                         </div>
                         <div class="follows-info__footer">
                             <img class="follows-info__footer--img" src="${info.rowIcon}" alt="row">
-                            <p class="follows-info__footer--text">${info.followersMetric + info.day}</p>
+                            <p class="follows-info__footer--text" style="color: ${info.color};">${info.followersMetric + info.day}</p>
                         </div> 
                     </div>
                 </div>
@@ -73,7 +73,7 @@ if(el.hero === "followers-hero") {
                             <h2 class="main-general__content--count">${info.metricCount}</h2>
                             <div class="main-general__content--cont">
                                 <img class="main-general__content--img" src="${info.rowIcon}" alt="row">
-                                <p class="main-general__content--text">${info.stadisticMetric}</p>
+                                <p class="main-general__content--text" style="color: ${info.color};">${info.stadisticMetric}</p>
                             </div>
                         </div>
                     </div>

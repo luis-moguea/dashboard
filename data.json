@@ -7,6 +7,7 @@
         "item": [
             {
                 "type": "followers-stadistics",
+                "backColor": "#198ff5",
                 "color": "#1db489",
                 "networkIcon": "images/icon-facebook.svg",
                 "id":"@nathanf",
@@ -18,6 +19,7 @@
             },
             {
                 "type": "followers-stadistics",
+                "backColor": "#1ca0f2",
                 "color": "#1db489",
                 "networkIcon": "images/icon-twitter.svg",
                 "id":"@nathanf",
@@ -29,6 +31,7 @@
             },
             {
                 "type": "followers-stadistics",
+                "backColor": "linear-gradient(90deg, #fdc468 0%, #df4996 100%)",
                 "color": "#1db489",
                 "networkIcon": "images/icon-instagram.svg",
                 "id":"@realnathanf",
@@ -40,6 +43,7 @@
             },
             {
                 "type": "followers-stadistics",
+                "backColor": "#c4032a",
                 "color": "#dc414c",
                 "networkIcon": "images/icon-youtube.svg",
                 "id":"Nathan F.",

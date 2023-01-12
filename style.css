@@ -6,8 +6,7 @@ body {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     color: #8b97c6;
-    background: linear-gradient(to top, hsl(230, 17%, 14%) 65%, hsl(232, 19%, 15%) 35%);
-
+    background: linear-gradient(to top, hsl(230, 17%, 14%) 70%, hsl(232, 19%, 15%) 30%);
 }
 
 .main{
