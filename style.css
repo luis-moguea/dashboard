@@ -59,6 +59,11 @@ body {
     border-bottom-right-radius: 5px;
     height: 98%;
     margin-top: 5px;
+    cursor: pointer;
+}
+
+.follows-info:hover{
+    background-color: #32374e;
 }
 
 .follows-info__header{
@@ -94,6 +99,7 @@ body {
 }
 
 .follows-info__footer{
+    margin-top: 25px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -142,6 +148,11 @@ body {
     font-size: 11px;
     font-weight: bold;
     padding-bottom: 0;
+    cursor: pointer;
+}
+
+.main-general:hover{
+    background-color: #32374e;
 }
 
 .main-general__metric {
