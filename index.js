@@ -28,8 +28,8 @@ if(el.hero === "followers-hero") {
     el.item.map(info => {
             element = /*HTML*/`
         <div class="main__js">
-            <div class="main__js__network__color ${info.color}">
-                <div class="main__js__network__color ${info.color}"  >
+            <div class="main__js__network__color">
+                <div class="main__js__network__color ${info.color}" id="color" >
                     <div class="follows-info">
                         <div class="follows-info__header">
                             <img class="follows-info__header--img" src="${info.networkIcon}" alt="network-icon">
@@ -48,9 +48,8 @@ if(el.hero === "followers-hero") {
             </div>
         </div>
             `
-
-        firstItem.innerHTML += element
-        const containerColor = document.querySelector("#color").setAttribute("bgcolor", "green")
+    
+            firstItem.innerHTML += element
 
     })} else if (el.hero === "general-hero"){
 
