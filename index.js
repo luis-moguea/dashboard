@@ -14,7 +14,7 @@ if(el.hero === "followers-hero") {
         <div class="main-js" id="item">
             <div class="header-js">
                 <div class="title">
-                    <h2>${el.title}</h2>
+                    <h1 class="title--text">${el.title}</h1>
                     <p class="total-follows">${el.followers}</p>
                 </div>
                 <div class="button">
@@ -27,13 +27,13 @@ if(el.hero === "followers-hero") {
 
     el.item.map(info => {
             element = /*HTML*/`
-        <div class="testing">
-            <div >
-                <div class="">
+        <div class="main__js">
+            <div class="main__js__network__color" style="${info.color}">
+                <div class="main__js__network__color" style="${info.color}">
                     <div class="follows-info">
                         <div class="follows-info__header">
                             <img class="follows-info__header--img" src="${info.networkIcon}" alt="network-icon">
-                            <p class="follows-info__header--text">${info.id}</p>
+                            <p style="${info.color}" class="follows-info__header--text ${info.color}">${info.id}</p>
                         </div>
                         <div class="follows-info__content">
                             <h3 class="follows-info__content--count">${info.followersCount}</h3>
@@ -48,15 +48,16 @@ if(el.hero === "followers-hero") {
             </div>
         </div>
             `
+    
             firstItem.innerHTML += element
 
     })} else if (el.hero === "general-hero"){
 
         element = /*HTML*/`
         <div class="main-overview">
-            <p class="">
+            <h1 class="main-overview--text">
                 ${el.view + el.viewDay}
-            </p>
+            </h1>
         </div>
     `
     view.innerHTML += element
@@ -69,10 +70,10 @@ if(el.hero === "followers-hero") {
                         <img src="${info.networkIcon}" alt="id">
                     </div>
                         <div class="main-general__content">
-                            <p>${info.metricCount}</p>
+                            <h2 class="main-general__content--count">${info.metricCount}</h2>
                             <div class="main-general__content--cont">
                                 <img class="main-general__content--img" src="${info.rowIcon}" alt="row">
-                                <p>${info.stadisticMetric}</p>
+                                <p class="main-general__content--text">${info.stadisticMetric}</p>
                             </div>
                         </div>
                     </div>

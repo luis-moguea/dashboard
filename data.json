@@ -7,7 +7,7 @@
         "item": [
             {
                 "type": "followers-stadistics",
-                "color": "",
+                "color": "#1db489",
                 "networkIcon": "images/icon-facebook.svg",
                 "id":"@nathanf",
                 "followersCount": "1987",
@@ -18,7 +18,7 @@
             },
             {
                 "type": "followers-stadistics",
-                "color": "",
+                "color": "#1db489",
                 "networkIcon": "images/icon-twitter.svg",
                 "id":"@nathanf",
                 "followersCount": "1044",
@@ -29,7 +29,7 @@
             },
             {
                 "type": "followers-stadistics",
-                "color": "",
+                "color": "#1db489",
                 "networkIcon": "images/icon-instagram.svg",
                 "id":"@realnathanf",
                 "followersCount": "11k",
@@ -40,7 +40,7 @@
             },
             {
                 "type": "followers-stadistics",
-                "color": "",
+                "color": "#dc414c",
                 "networkIcon": "images/icon-youtube.svg",
                 "id":"Nathan F.",
                 "followersCount": "8239",
@@ -61,6 +61,7 @@
                 "metric": "Page Views",
                 "networkIcon": "images/icon-facebook.svg",
                 "metricCount": "87",
+                "color": "#1db489",
                 "rowIcon": "images/icon-up.svg",
                 "stadisticMetric": "3%"
             },
@@ -69,6 +70,7 @@
                 "metric": "Likes",
                 "networkIcon": "images/icon-facebook.svg",
                 "metricCount": "52",
+                "color": "#dc414c",
                 "rowIcon": "images/icon-down.svg",
                 "stadisticMetric": "2%"
             },
@@ -77,6 +79,7 @@
                 "metric": "Likes",
                 "networkIcon": "images/icon-instagram.svg",
                 "metricCount": "5462",
+                "color": "#1db489",
                 "rowIcon": "images/icon-up.svg",
                 "stadisticMetric": "2257%"
             },
@@ -85,6 +88,7 @@
                 "metric": "Profile Views",
                 "networkIcon": "images/icon-instagram.svg",
                 "metricCount": "52k",
+                "color": "#1db489",
                 "rowIcon": "images/icon-up.svg",
                 "stadisticMetric": "1375%"
             },
@@ -93,6 +97,7 @@
                 "metric": "Retweets",
                 "networkIcon": "images/icon-twitter.svg",
                 "metricCount": "117",
+                "color": "#1db489",
                 "rowIcon": "images/icon-up.svg",
                 "stadisticMetric": "303%"
             },
@@ -101,6 +106,7 @@
                 "metric": "Likes",
                 "networkIcon": "images/icon-twitter.svg",
                 "metricCount": "507",
+                "color": "#1db489",
                 "rowIcon": "images/icon-up.svg",
                 "stadisticMetric": "553%"
             },
@@ -109,6 +115,7 @@
                 "metric": "Likes",
                 "networkIcon": "images/icon-youtube.svg",
                 "metricCount": "107",
+                "color": "#dc414c",
                 "rowIcon": "images/icon-down.svg",
                 "stadisticMetric": "19%"
             },
@@ -117,6 +124,7 @@
                 "metric": "Total Views",
                 "networkIcon": "images/icon-youtube.svg",
                 "metricCount": "1407",
+                "color": "#dc414c",
                 "rowIcon": "images/icon-down.svg",
                 "stadisticMetric": "12%"
             }
