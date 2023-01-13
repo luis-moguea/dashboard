@@ -192,24 +192,42 @@ body {
 
 
 @media all and (max-width: 700px){
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        margin-left: 15px;
+    }
     .main__js{
         padding: 0.8em;
     }
 
     .header-js{
         display: block;
+        margin-left: 15px;
+    }
+
+    .main-overview--text{
+        margin-left: 15px;
     }
 
     .title--text{
+        font-size: 20px;
         line-height: 10px;
         text-overflow: unset;
     }
 
     .follows-info{
         display: block;
+        width: 290px;
+        padding: 0.5;
     }
 
     .main-general{
         display: block;
+        width: 290px;
+        margin-left: 15px;
     }
 }
