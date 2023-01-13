@@ -196,8 +196,13 @@ body {
         padding: 0.8em;
     }
 
-    .header{
+    .header-js{
         display: block;
+    }
+
+    .title--text{
+        line-height: 10px;
+        text-overflow: unset;
     }
 
     .follows-info{
