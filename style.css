@@ -189,3 +189,22 @@ body {
     margin-right: 4px;
 }
 
+
+
+@media all and (max-width: 700px){
+    .main__js{
+        padding: 0.8em;
+    }
+
+    .header{
+        display: block;
+    }
+
+    .follows-info{
+        display: block;
+    }
+
+    .main-general{
+        display: block;
+    }
+}
