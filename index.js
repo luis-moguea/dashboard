@@ -1,171 +1,17 @@
-//import data from './data.json' assert { type: 'json' };
 
-
-const data = [
-    {
-        "hero": "followers-hero",
-        "title": "Social Media Dashboard",
-        "followers":"Total followers: 23,004",
-        "mode": "Dark Mode",
-        "item": [
-            {
-                "type": "followers-stadistics",
-                "backColor": "#198ff5",
-                "color": "#1db489",
-                "networkIcon": "images/icon-facebook.svg",
-                "id":"@nathanf",
-                "followersCount": "1987",
-                "followersWord": "followers",
-                "rowIcon": "images/icon-up.svg",
-                "followersMetric": "12 ",
-                "day": "Today"
-            },
-            {
-                "type": "followers-stadistics",
-                "backColor": "#1ca0f2",
-                "color": "#1db489",
-                "networkIcon": "images/icon-twitter.svg",
-                "id":"@nathanf",
-                "followersCount": "1044",
-                "followersWord": "followers",
-                "rowIcon": "images/icon-up.svg",
-                "followersMetric": "99 ",
-                "day": "Today"
-            },
-            {
-                "type": "followers-stadistics",
-                "backColor": "linear-gradient(90deg, #fdc468 0%, #df4996 100%)",
-                "color": "#1db489",
-                "networkIcon": "images/icon-instagram.svg",
-                "id":"@realnathanf",
-                "followersCount": "11k",
-                "followersWord": "followers",
-                "rowIcon": "images/icon-up.svg",
-                "followersMetric": "1099 ",
-                "day": "Today"
-            },
-            {
-                "type": "followers-stadistics",
-                "backColor": "#c4032a",
-                "color": "#dc414c",
-                "networkIcon": "images/icon-youtube.svg",
-                "id":"Nathan F.",
-                "followersCount": "8239",
-                "followersWord": "subscribers",
-                "rowIcon": "images/icon-down.svg",
-                "followersMetric": "144 ",
-                "day": "Today"
-            }
-        ]
-    },
-    {
-        "hero": "general-hero",
-        "view": "Overview - ",
-        "viewDay": "Today",
-        "item": [
-            {
-                "type": "general-stadistics",
-                "metric": "Page Views",
-                "networkIcon": "images/icon-facebook.svg",
-                "metricCount": "87",
-                "color": "#1db489",
-                "rowIcon": "images/icon-up.svg",
-                "stadisticMetric": "3%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Likes",
-                "networkIcon": "images/icon-facebook.svg",
-                "metricCount": "52",
-                "color": "#dc414c",
-                "rowIcon": "images/icon-down.svg",
-                "stadisticMetric": "2%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Likes",
-                "networkIcon": "images/icon-instagram.svg",
-                "metricCount": "5462",
-                "color": "#1db489",
-                "rowIcon": "images/icon-up.svg",
-                "stadisticMetric": "2257%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Profile Views",
-                "networkIcon": "images/icon-instagram.svg",
-                "metricCount": "52k",
-                "color": "#1db489",
-                "rowIcon": "images/icon-up.svg",
-                "stadisticMetric": "1375%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Retweets",
-                "networkIcon": "images/icon-twitter.svg",
-                "metricCount": "117",
-                "color": "#1db489",
-                "rowIcon": "images/icon-up.svg",
-                "stadisticMetric": "303%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Likes",
-                "networkIcon": "images/icon-twitter.svg",
-                "metricCount": "507",
-                "color": "#1db489",
-                "rowIcon": "images/icon-up.svg",
-                "stadisticMetric": "553%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Likes",
-                "networkIcon": "images/icon-youtube.svg",
-                "metricCount": "107",
-                "color": "#dc414c",
-                "rowIcon": "images/icon-down.svg",
-                "stadisticMetric": "19%"
-            },
-            {
-                "type": "general-stadistics",
-                "metric": "Total Views",
-                "networkIcon": "images/icon-youtube.svg",
-                "metricCount": "1407",
-                "color": "#dc414c",
-                "rowIcon": "images/icon-down.svg",
-                "stadisticMetric": "12%"
-            }
-        ]
-    }
-]
+import {data} from './data.js';
 
 
 const firstItem = document.querySelector("#first-item")
 const secondItem = document.querySelector("#second-item")
-const header = document.querySelector("#header")
-const view = document.querySelector("#overview")
 
 
 data.map(el => {
     let element;
 
-    if(el.hero === "followers-hero") {
-        element = /*HTML*/`
-            <div class="main-js" id="item">
-                <div class="header-js">
-                    <div class="title">
-                        <h1 class="title--text">${el.title}</h1>
-                        <p class="total-follows">${el.followers}</p>
-                    </div>
-                    <div class="button">
-                        <p class="dark-word">${el.mode}</p>
-                    </div>
-                </div>
-            </div>`
-
-        header.innerHTML += element
-
     el.item.map(info => {
+
+    if(info.type === "followers-stadistics"){
         element = /*HTML*/`
             <div class="main__js">
                 <div class="main__js__network__color">
@@ -189,39 +35,26 @@ data.map(el => {
             </div>`
     
         firstItem.innerHTML += element
-
-    })} else if (el.hero === "general-hero"){
-
-        element = /*HTML*/`
-            <div class="main-overview">
-                <h1 class="main-overview--text">
-                    ${el.view + el.viewDay}
-                </h1>
-            </div>`
-
-        view.innerHTML += element
-
-    el.item.map(info => {
+        
+    } else if (info.type === "general-stadistics") {
         element = /*HTML*/`
             <div class="main-general">
                 <div class="main-general__metric">
                     <p>${info.metric}</p>
                     <img src="${info.networkIcon}" alt="id">
                 </div>
-                    <div class="main-general__content">
-                       <h2 class="main-general__content--count">${info.metricCount}</h2>
-                        <div class="main-general__content--cont">
-                            <img class="main-general__content--img" src="${info.rowIcon}" alt="row">
-                            <p class="main-general__content--text" style="color: ${info.color};">${info.stadisticMetric}</p>
-                        </div>
+                <div class="main-general__content">
+                    <h2 class="main-general__content--count">${info.metricCount}</h2>
+                    <div class="main-general__content--cont">
+                        <img class="main-general__content--img" src="${info.rowIcon}" alt="row">
+                        <p class="main-general__content--text" style="color: ${info.color};">${info.stadisticMetric}</p>
                     </div>
                 </div>
             </div>`
 
         secondItem.innerHTML += element
-        
-    })}
+    }
     
-})
+})})
     
 

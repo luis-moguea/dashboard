@@ -1,4 +1,5 @@
-[
+
+export const data = [
     {
         "hero": "followers-hero",
         "title": "Social Media Dashboard",
@@ -135,3 +136,5 @@
         ]
     }
 ]
+
+
