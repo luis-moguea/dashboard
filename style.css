@@ -277,6 +277,11 @@ input:checked + .slide:before {
         margin-left: 15px;
     }
 
+    .button {
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
     .main-overview--text{
         margin-left: 15px;
     }
