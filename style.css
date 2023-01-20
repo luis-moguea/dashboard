@@ -64,38 +64,35 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #8b97c6;
+    background: linear-gradient(62deg, #378fe6 0%, #3eda82 100%);
     -webkit-transition: .4s;
     transition: .4s;
     padding: 8px;
     margin-top: -2px;
 }
+
 .slide:before {
     position: absolute;
     content: "";
     height: 23px;
     width: 23px;
-    left: 38px;
+    left: 5px;
     bottom: 4px;
-    background-color: white;
+    background-color: #1f212e;
     -webkit-transition: .4s;
     transition: .4s;
 }
-input:checked + .slide {
-    background: linear-gradient(62deg, #378fe6 0%, #3eda82 100%);
-    padding-left: 40px;
-}
 
-input:focus + .slide {
-    box-shadow: 0 0 1px #01aeed;
+input:checked + .slide {
+    background: #aeb3cb;
 }
 
 input:checked + .slide:before {
-    -webkit-transform: translateX(-26px);
+    -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-    left: -20px;
-    background: #1f212e;
+    left: 10px;
+    background-color: #ffffff;
 }
 
 .slide.round {
