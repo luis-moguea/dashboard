@@ -6,7 +6,7 @@ body {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     color: #8b97c6;
-    background: linear-gradient(to top, hsl(230, 17%, 14%) 70%, hsl(232, 19%, 15%) 30%);
+    background: linear-gradient(to top, #1e202a 70%, #1f212e 30%);
 }
 
 .main{
@@ -64,11 +64,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #8b97c6;
     -webkit-transition: .4s;
     transition: .4s;
     padding: 8px;
-    color: #fff;
     margin-top: -2px;
 }
 .slide:before {
@@ -83,7 +82,7 @@ body {
     transition: .4s;
 }
 input:checked + .slide {
-    background-color: #8CE196;
+    background: linear-gradient(62deg, #378fe6 0%, #3eda82 100%);
     padding-left: 40px;
 }
 
@@ -96,6 +95,7 @@ input:checked + .slide:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     left: -20px;
+    background: #1f212e;
 }
 
 .slide.round {
