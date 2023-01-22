@@ -59,11 +59,13 @@ data.map(el => {
 })})
     
 
+
 const toggleButton = document.querySelector("#button")
 const firstCard = document.querySelectorAll(".follows-info")
 const secondCard = document.querySelectorAll(".main-general")
 const title = document.querySelector("#title-light")
 const body = document.querySelector("#body-light")
+const overview = document.querySelector("#overview")
 const followsCount = document.querySelectorAll(".follows-info__content--count")
 const generalCount = document.querySelectorAll(".main-general__content--count")
 
@@ -73,16 +75,16 @@ toggleButton.addEventListener("click", () => {
         el.classList.add("follows-info-light")
     })
     title.classList.add("title--text-light")
-    body.classList.add("body-light")
+        body.classList.add("body-light")
     followsCount.forEach(el => {
         el.classList.add("follows-info__content--count-light")
     })
+    overview.classList.add("main-overview--text-light")
     secondCard.forEach(el => {
         el.classList.add("main-general-light")
     })
     generalCount.forEach(el => {
         el.classList.add("main-general__content--count-light")
     })
-
 })
 
