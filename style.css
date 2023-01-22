@@ -169,6 +169,10 @@ input:checked + .slide:before {
     background-color: #32374e;
 }
 
+.follows-info-light:hover{
+    background-color: #d1dafa;
+}
+
 .follows-info__header{
     display: flex;
     align-items: center;
@@ -278,6 +282,10 @@ input:checked + .slide:before {
 
 .main-general:hover{
     background-color: #32374e;
+}
+
+.main-general-light:hover{
+    background-color: #eaedf8;
 }
 
 .main-general__metric {
