@@ -16,13 +16,13 @@ data.map(el => {
             <div class="main__js">
                 <div class="main__js__network__color">
                     <div class="main__js__network__color" style="background: ${info.backColor};" >
-                        <div class="follows-info">
+                        <div id="followCard-light" class="follows-info">
                             <div class="follows-info__header">
                                 <img class="follows-info__header--img" src="${info.networkIcon}" alt="network-icon">
                                 <p class="follows-info__header--text">${info.id}</p>
                             </div>
                             <div class="follows-info__content">
-                                <h3 class="follows-info__content--count">${info.followersCount}</h3>
+                                <h3 id="followsCount-light" class="follows-info__content--count">${info.followersCount}</h3>
                                 <p class="follows-info__content--text">${info.followersWord}</p>
                             </div>
                             <div class="follows-info__footer">
@@ -38,13 +38,13 @@ data.map(el => {
         
     } else if (info.type === "general-stadistics") {
         element = /*HTML*/`
-            <div class="main-general">
+            <div id="secondItem-light" class="main-general">
                 <div class="main-general__metric">
                     <p>${info.metric}</p>
                     <img src="${info.networkIcon}" alt="id">
                 </div>
                 <div class="main-general__content">
-                    <h2 class="main-general__content--count">${info.metricCount}</h2>
+                    <h2 id="generalCount-light" class="main-general__content--count">${info.metricCount}</h2>
                     <div class="main-general__content--cont">
                         <img class="main-general__content--img" src="${info.rowIcon}" alt="row">
                         <p class="main-general__content--text" style="color: ${info.color};">${info.stadisticMetric}</p>
@@ -55,6 +55,34 @@ data.map(el => {
         secondItem.innerHTML += element
     }
     
+    
 })})
     
+
+const toggleButton = document.querySelector("#button")
+const firstCard = document.querySelectorAll(".follows-info")
+const secondCard = document.querySelectorAll(".main-general")
+const title = document.querySelector("#title-light")
+const body = document.querySelector("#body-light")
+const followsCount = document.querySelectorAll(".follows-info__content--count")
+const generalCount = document.querySelectorAll(".main-general__content--count")
+
+
+toggleButton.addEventListener("click", () => {
+    firstCard.forEach(el => {
+        el.classList.add("follows-info-light")
+    })
+    title.classList.add("title--text-light")
+    body.classList.add("body-light")
+    followsCount.forEach(el => {
+        el.classList.add("follows-info__content--count-light")
+    })
+    secondCard.forEach(el => {
+        el.classList.add("main-general-light")
+    })
+    generalCount.forEach(el => {
+        el.classList.add("main-general__content--count-light")
+    })
+
+})
 

@@ -9,6 +9,17 @@ body {
     background: linear-gradient(to top, #1e202a 70%, #1f212e 30%);
 }
 
+.body-light {
+    align-content: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #8b97c6;
+    background: linear-gradient(to top, #ffffff 70%, #f5f7ff 30%);
+}
+
 .main{
     margin-left: 15%;
     margin-right: 15%;
@@ -41,6 +52,12 @@ body {
     margin-right: 20px;
 }
 
+.dark-word-light{
+    font-weight: bold;
+    color: #aeb3cb;
+    margin-right: 20px;
+}
+
 .button {
     display: flex;
 }
@@ -53,7 +70,7 @@ body {
     margin-top: 10px;
 }
 
-.switchBtn input {
+.input-display {
     display:none;
 }
 
@@ -107,6 +124,11 @@ input:checked + .slide:before {
     color: #ffffff;
 }
 
+.title--text-light{
+    color: #1e202a;
+}
+
+
 .follows-info {
     justify-content: center;
     width: 200px;
@@ -118,6 +140,24 @@ input:checked + .slide:before {
     padding: 0.65em;
     padding-bottom: 0;
     background-color: hsl(228, 28%, 20%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 98%;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.follows-info-light {
+    justify-content: center;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    line-height: 3px;
+    float: left;
+    margin-bottom: 15px;
+    padding: 0.65em;
+    padding-bottom: 0;
+    background-color: hsl(227, 47%, 96%);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 98%;
@@ -154,6 +194,11 @@ input:checked + .slide:before {
 .follows-info__content--count{
     font-size: 38px;
     color: #ffffff;
+}
+
+.follows-info__content--count-light{
+    font-size: 38px;
+    color: hsl(230, 17%, 14%);
 }
 
 .follows-info__content--text{
@@ -198,6 +243,12 @@ input:checked + .slide:before {
     color: #ffffff;
 }
 
+.main-overview--text-light{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #8b97c6;
+}
+
 
 .main-general {
     width: 200px;
@@ -205,7 +256,20 @@ input:checked + .slide:before {
     height: 80px;
     float: left;
     padding: 0.8em;
-    background-color: hsl(228, 28%, 20%);
+    background-color: #252a41;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-general-light {
+    width: 200px;
+    margin-bottom: 15px;
+    height: 80px;
+    float: left;
+    padding: 0.8em;
+    background-color: #f0f2fa;
     border-radius: 5px;
     font-size: 11px;
     font-weight: bold;
@@ -239,6 +303,12 @@ input:checked + .slide:before {
     font-size: 22px;
     margin-top: 0;
     color: #ffffff;
+}
+
+.main-general__content--count-light {
+    font-size: 22px;
+    margin-top: 0;
+    color: #1e202a;
 }
 
 .main-general__content--cont {
