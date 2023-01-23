@@ -13,7 +13,7 @@ data.map(el => {
 
     if(info.type === "followers-stadistics"){
         element = /*HTML*/`
-            <div class="main__js">
+            <div id="test" class="main__js">
                 <div class="main__js__network__color">
                     <div class="main__js__network__color" style="background: ${info.backColor};" >
                         <div id="followCard-light" class="follows-info">
@@ -70,21 +70,30 @@ const followsCount = document.querySelectorAll(".follows-info__content--count")
 const generalCount = document.querySelectorAll(".main-general__content--count")
 
 
-toggleButton.addEventListener("click", () => {
+const test = () => {
     firstCard.forEach(el => {
-        el.classList.add("follows-info-light")
+        el.classList.toggle("follows-info-light")
     })
-    title.classList.add("title--text-light")
-        body.classList.add("body-light")
-    followsCount.forEach(el => {
-        el.classList.add("follows-info__content--count-light")
-    })
-    overview.classList.add("main-overview--text-light")
-    secondCard.forEach(el => {
-        el.classList.add("main-general-light")
-    })
-    generalCount.forEach(el => {
-        el.classList.add("main-general__content--count-light")
-    })
-})
 
+    title.classList.toggle("title--text-light")
+
+    body.classList.toggle("body-light")
+
+    followsCount.forEach(el => {
+        el.classList.toggle("follows-info__content--count-light")
+    })
+
+    overview.classList.toggle("main-overview--text-light")
+
+    secondCard.forEach(el => {
+        el.classList.toggle("main-general-light")
+    })
+
+    generalCount.forEach(el => {
+        el.classList.toggle("main-general__content--count-light")
+    })
+
+    test()
+}
+
+toggleButton.addEventListener("click", test)

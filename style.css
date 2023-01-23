@@ -148,21 +148,8 @@ input:checked + .slide:before {
 }
 
 .follows-info-light {
-    justify-content: center;
-    width: 200px;
-    align-items: center;
-    text-align: center;
-    line-height: 3px;
-    float: left;
-    margin-bottom: 15px;
-    padding: 0.65em;
-    padding-bottom: 0;
     background-color: hsl(227, 47%, 96%);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     height: 98%;
-    margin-top: 3px;
-    cursor: pointer;
 }
 
 .follows-info:hover{
