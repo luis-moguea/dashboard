@@ -70,7 +70,9 @@ const followsCount = document.querySelectorAll(".follows-info__content--count")
 const generalCount = document.querySelectorAll(".main-general__content--count")
 
 
+
 const test = () => {
+    console.log("Test function executed")
     firstCard.forEach(el => {
         el.classList.toggle("follows-info-light")
     })
@@ -92,8 +94,11 @@ const test = () => {
     generalCount.forEach(el => {
         el.classList.toggle("main-general__content--count-light")
     })
-
-    test()
 }
 
-toggleButton.addEventListener("click", test)
+
+toggleButton.addEventListener("click", () => {
+    console.log("Button clicked"); // Mensaje de depuración
+    test();
+});
+
